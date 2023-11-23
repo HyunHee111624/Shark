@@ -78,6 +78,8 @@ int board_getBoardCoin(int pos)
 }
 
 //int board_getSharkPosition(void);
+
+//int board_stepShark(void);
 int board_stepShark(void)
 {
     int step = rand()%MAX_SHARKSTEP + 1;
@@ -93,4 +95,3 @@ int board_stepShark(void)
     return board_SharkPosition;
 }
 
-//int board_stepShark(void);

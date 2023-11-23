@@ -188,7 +188,7 @@ int main(int argc, char *argv[])
     //printf("");
      
     //2-4. 동전 줍기
-    coinResult = board_getBoardCoin(pos); 
+    coinResult = board_getBoardCoin(player_position[turn]); 
     player_coin[turn] += coinResult;
     // printf()
     
@@ -209,8 +209,8 @@ int main(int argc, char *argv[])
   //3. 정리 (승자 계산, 출력 등) 
   if ( game_end() == 1)
   {
-  printf("Alive player : %i\n", getAlivePlayer());
-  printf("Winner : %i\n", getWinner());
+  printf("Number of Alive player : %i\n", getAlivePlayer());
+  printf("Winner : player %i\n", getWinner()+1 );
   }
 
         
